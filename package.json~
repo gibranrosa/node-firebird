@@ -1,5 +1,5 @@
 {
-  "name": "node-firebird-21",
+  "name": "node-firebird",
   "version": "0.8.2",
   "description": "Pure JavaScript and Asynchronous Firebird client for Node.js.",
   "keywords": [
@@ -8,10 +8,10 @@
     "rdbms",
     "sql"
   ],
-  "homepage": "https://github.com/gibranrosa/node-firebird",
+  "homepage": "https://github.com/hgourvest/node-firebird",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gibranrosa/node-firebird"
+    "url": "https://github.com/hgourvest/node-firebird"
   },
   "author": {
     "name": "Henri Gourvest",

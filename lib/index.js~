@@ -3158,7 +3158,6 @@ Connection.prototype.attach = function (options, callback, db) {
     var user = options.user || DEFAULT_USER;
     var password = options.password || DEFAULT_PASSWORD;
     var role = options.role;
-    var dialect = options.dialect || 3;
     var self = this;
     var msg = this._msg;
     var blr = this._blr;
@@ -3166,7 +3165,6 @@ Connection.prototype.attach = function (options, callback, db) {
     blr.pos = 0;
 
     blr.addByte(1);
-    blr.addByteInt32(isc_dpb_sql_dialect, dialect); 
     blr.addString(isc_dpb_lc_ctype, 'UTF8', DEFAULT_ENCODING);
     blr.addString(isc_dpb_user_name, user, DEFAULT_ENCODING);
     blr.addString(isc_dpb_password, password, DEFAULT_ENCODING);
